@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ZH-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <title>Carousel</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .layout {
+            width: 600px;
+            margin: 0 auto;
+        }
+
+        .screen {
+            padding: 10px 0;
+            width: 600px;
+            overflow: hidden;
+            margin-left: 300px;
+        }
+
+        .imges {
+            display: flex;
+            align-items: flex-start;
+            transition: transform 0.5s;
+        }
+
+        img {
+            width: 600px;
+            height: 500px;
+
+        }
+
+        .button {
+            display: inline-block;
+
+            margin-left: 300px;
+            text-align: center;
+        }
+
+        .button>span {
+            display: inline-block;
+            border-radius: 50%;
+            padding: 20px 20px;
+            margin: 0 40px;
+            border: 1px solid red;
+
+
+        }
+
+        .red {
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="screen layout">
+        <div class="imges" id="imges">
+            <img src="./cat 2-min.jpg" alt="catphoto">
+            <img src="./cat1-min.jpg" alt="catphoto">
+            <img src="./cat3.jpg" alt="catpgoto">
+        </div>
+    </div>
+    <span class="button layout" id="button">
+        <span id="one"></span>
+        <span id="two"></span>
+        <span id="three"></span>
+    </span>
+</body>
+<script src="./carousel.js"></script>
+
+</html>
