@@ -16,7 +16,7 @@ position: relative;
 }
 .images > img{
 width: 100%;
-transition: all 1s;
+transition: all 0.3s;
 position: absolute;
 top: 0;
 }
