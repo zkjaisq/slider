@@ -1,0 +1,17 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+.window{
+    width: 600px;
+    height: 500px;
+    border: 1px solid red;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.images{
+display: flex;
+justify-content: flex-start;
+}
+.images >img{
+    width: 100%;
+}
+
+
