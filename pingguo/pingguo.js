@@ -23,7 +23,7 @@ function setTimer() {
   return setInterval(() => {
     n += 1
     $allListns.eq(n % size).trigger('click')
-  }, 4000)
+  }, 5000)
 }
 moveEvent()
 

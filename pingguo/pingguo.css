@@ -9,16 +9,23 @@
 }
 *{
     box-sizing: border-box;
+    text-decoration: none;
+}
+a{
+    color: #0196e3;
+}
+a:hover{
+    text-decoration: underline;
 }
 li{
     list-style: none;
 }
 h1,h2,p{
    text-align: center;
-   padding: 10px 0;
 }
 p{
     margin: 10px 0;
+    line-height: 2em;
 }
 .view{
     height: 400px;
@@ -45,13 +52,13 @@ p{
   justify-content: center;
 }
 .foot li{
-    margin-left: 2px;
+    margin-left: 3px;
     position: relative;
     border-radius: 3px;
     box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.2);
 }
-.foot li:active{
-    background-color: #d6d6d6;
+.foot .active{
+    background-color:dimgrey;
 }
 .foot >ul >li >a{
     display: block;
@@ -64,5 +71,5 @@ p{
     position: absolute;
     top: -1px;
     left: calc(50% - 10px);
-   
+   border-radius: 2px;
 }
